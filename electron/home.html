@@ -1,0 +1,76 @@
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta charset="utf-8" />
+    <title>Emotion Detection</title>
+    <link rel='stylesheet prefetch' href='https://fonts.googleapis.com/css?family=Open+Sans:600'>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
+        integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
+    <link rel="stylesheet" href="home.css">
+
+    <script src="https://cdn.webrtc-experiment.com/MediaStreamRecorder.js"> </script>
+    <script src="home.js"></script>
+</head>
+
+<body>
+    <div class="container col-xs-12">
+
+        <div class="row toolbar">
+            <img src="./img/portfolio.svg" class="icon" id="open_file2" />
+            <img src="./img/microphone.svg" id="mic-icon" id="open_file" class="icon" />
+            <select class="icon" name="microphone-select" id="microphone-select">
+            </select>
+        </div>
+
+        <h1 class="linear-wipe">How are you feeling?</h1>
+
+        <div class="recording-animation"
+            id="recordingAnimation"></div>
+
+        <div class="recording-animation"
+            id="loadingAnimation"></div>
+
+            
+        <div id="sad-result-container">
+            <div id="sad-animation" class="emotion-animation"></div>
+            <p class="sad-result">Sad</p>
+        </div>
+
+        <div id="happy-result-container">
+            <div id="happy-animation" class="emotion-animation"></div>
+            <p class="happy-result">Happy</p>
+        </div>
+
+        <div id="normal-result-container">
+            <div id="normal-animation" class="emotion-animation"></div>
+            <p class="normal-result">Normal</p>
+        </div>
+
+        <div id="angry-result-container">
+            <div id="angry-animation" class="emotion-animation"></div>
+            <p class="angry-result">Angry</p>
+        </div>
+
+        <div id="fearful-result-container">
+            <div id="fearful-animation" class="emotion-animation"></div>
+            <p class="fearful-result">Fearful</p>
+        </div>
+
+        <div id="error-result-container">
+            <div id="error-animation" class="emotion-animation"></div>
+            <p class="error-result">We encountered an error. Please check the logs!</p>
+        </div>
+
+        <div id="start_code" type="submit" class="col-md-12 mx-auto button" value="Record">
+            <h5 class="buttonText" id="buttonText">Record</h5>
+        </div>
+
+        <span class="timer" id="time"></span>
+
+    </div>
+</body>
+
+</html>

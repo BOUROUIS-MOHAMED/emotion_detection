@@ -1,0 +1,1 @@
+{'activation': 'tanh', 'alpha': 0.05, 'epsilon': 1e-08, 'hidden_layer_sizes': (50,), 'learning_rate': 'adaptive', 'solver': 'adam'}

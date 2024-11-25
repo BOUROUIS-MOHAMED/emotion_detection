@@ -1,0 +1,261 @@
+
+body {
+  margin: 0;
+  color: #EEE;
+  background: #111111;
+  font: 500 16px/18px 'Roboto', sans-serif;
+}
+
+.container {
+  width: 620px;
+  height: 500px;
+}
+
+.icon {
+  height: 25px;
+  width: 25px;
+}
+
+.toolbar {
+  position: absolute;
+  right: 20px;
+  top: 25px;
+}
+
+.button {
+  position: absolute;
+  bottom: 60px;
+  width: 350px;
+  height: 60px;
+  left: 140px;
+  border-radius: 7px;
+  background-color: #3A3A3A;
+  color: #EEE;
+  margin-top: 10%;
+  font-size: 15px;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+
+#result-container {
+  visibility: hidden;
+  border-radius: 5px;
+  padding: 9px;
+  width: 40%;
+  margin-left: 30%;
+  height: 35px;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+
+.result {
+  display: inline-block;
+  font-size: larger;
+  color: black;
+}
+
+.button:active {
+  /* set time duration to your needs */
+  animation: gradient 100ms;
+  background: #c471ed;
+  color: #fff;
+  box-shadow: none;
+}
+
+html { height: 100%; }
+
+body { 
+  text-align: center;
+  min-height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+select {
+  color: #111111;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  appearance: none;
+  margin-right: 3px; 
+  width: 20px;
+  background-color: #111111;
+  outline: none;
+  display: inline-block;
+  width:250px;
+  border:1px solid #111111;
+  border-radius: 0 0 5px 5px;
+}
+
+#mic-icon {
+  display:inline-block; 
+  position: absolute; 
+  pointer-events: none;
+}
+
+#result-container {
+  margin-top: 14%;
+}
+
+option { 
+  /* Whatever color  you want */
+  background-color: rgb(175, 175, 175);
+}
+
+h1 { font-size: 40px }
+
+.linear-wipe {
+  position: absolute;
+  user-select: none;
+  top: 100px;
+  left: 130px;
+  background: linear-gradient(to right, #12c2e9 20%, #c471ed 40%, #f64f59 60%, #FFF 80%);
+  background-size: 200% auto;
+  color: #000;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: shine 1s linear infinite;
+  @keyframes shine {
+    to {
+      background-position: 200% center;
+    }
+  }
+}
+
+.emotion-animation {
+  position: absolute;
+  top: 180px;
+  height: 100px;
+  width: 100px;
+}
+
+.recording-animation {
+  position: absolute;
+  height: 150px; 
+  width: 150px; 
+  top: 165px;
+  left: 240px;
+}
+
+.timer {
+  position: absolute;
+  bottom: 40px;
+  right: 30px;
+  font-size: 22px;
+}
+
+#sad-result-container{
+  display: none;
+  align-items: center;
+  justify-content: center;
+}
+
+#happy-result-container{
+  display: none;
+  align-items: center;
+  justify-content: center;
+}
+
+#fearful-result-container{
+  display: none;
+  align-items: center;
+  justify-content: center;
+}
+
+#normal-result-container{
+  display: none;
+  align-items: center;
+  justify-content: center;
+}
+
+#angry-result-container{
+  display: none;
+  align-items: center;
+  justify-content: center;
+}
+
+#error-result-container{
+  display: none;
+  align-items: center;
+  justify-content: center;
+}
+
+.sad-result {
+  position: absolute;
+  background: linear-gradient(to right, #009ffd 20%, #009ffd 40%, #2a2a72 60%, #2a2a72 80%);
+  bottom: 185px;
+  background-size: 200% auto;
+  color: #000;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.angry-result {
+  position: absolute;
+  background: linear-gradient(to right, #b02e0c 20%, #b02e0c 40%, #eb4511 60%, #eb4511 80%);
+  bottom: 185px;
+  background-size: 200% auto;
+  color: #000;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.normal-result {
+  position: absolute;
+  background: linear-gradient(to right, #8693ab 20%, #8693ab 40%, #8693ab 60%, #8693ab 80%);
+  bottom: 185px;
+  background-size: 200% auto;
+  color: #000;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.fearful-result {
+  position: absolute;
+  background: linear-gradient(to right, #5f0a87 20%, #5f0a87 40%, #a4508b 60%, #a4508b 80%);
+  bottom: 185px;
+  background-size: 200% auto;
+  color: #000;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.happy-result {
+  position: absolute;
+  background: linear-gradient(to right, #ffdd00 20%, #ffdd00 40%, #fbb034 60%, #fbb034 80%);
+  bottom: 185px;
+  background-size: 200% auto;
+  color: #000;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.error-result {
+  position: absolute;
+  background: linear-gradient(to right, #fe5858 20%, #fe5858 40%, #ee9617 60%, #ee9617 80%);
+  bottom: 185px;
+  background-size: 200% auto;
+  color: #000;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.buttonText {
+  user-select: none;
+  font-size: 16px;
+}
